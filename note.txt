@@ -1,0 +1,11 @@
+Problem zapisu danych z modelu obiektowego do relacyjnej bazy danych.
+w obkietkowoœci to s¹ obiekty po³¹czone ze sob¹ referencjami
+w bazach relacyjnych - tabele.
+Aby umo¿liwiæ po³¹czenie miêdzy obiektami a baz¹ danych wykorzystujemy interfejs JDBC - java database connectivity.
+Jest to jednolite API korzustaj¹ce ze sterowników (biblioteki dla okreœlonych baz danych (odpowiedni jar)). 
+Po JDPC powsta³o kilka innych rozwi¹zañ: JDPC Template - wzorzec, który umo¿liwa wykonywaæ zapytania w ³atwiejszy sposób. Unikamy problemów z ³apaniem wyj¹tków. Mamy do dyspozycji mappery,
+ czyli klasy pozwal¹ce mapowaæ (data mappery). Jest wiele wiele wiêcej takich narzêdzi, nazwanych ogólnie ORM - Object Relational Mapping.
+
+JPA - dokument, który opisuje w jaki sposób programista powinien pisaæ programy z wykorzystaniem JPA oraz jak powinna przebiegaæ implementacja (np. Hibernate jest implementacj¹ JPA).
+
+
