@@ -26,6 +26,7 @@ public class Main {
 
         entityManager.getTransaction().begin();
         entityManager.persist(employee);
+        entityManager.persist(address);
         entityManager.getTransaction().commit();
 
         entityManager.close();
