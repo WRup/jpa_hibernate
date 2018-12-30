@@ -25,6 +25,12 @@ Korzystaj¹c z obiektu entityManager mo¿emy wykonywaæ transakcjê na bazie danych 
 
 Pamiêtaæ o tym, aby w klasie na podstawie której chcemy utworzyæ tabele nale¿y dodaæ adnotacjê @Entity.
 
+Przydatne adnotacje:
+	1. @GeneratedValue(strategy = GenerationType.AUTO) - auto generowanie ID;
+	2. @Column(name = "bla", nullable = false, length = 10) - d³ugoœæ i not null
+	3. @Column(precision = 10, scale = 2) - dla BigDecimali iloœæ liczb dziesiêtnych i po przeicnku
+	4. @Transient - dodana przy polu pomija go i nie dodaje jako kolumna w tabeli bazy danych.
+
 
 
 

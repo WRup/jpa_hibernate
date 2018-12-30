@@ -17,7 +17,7 @@ public class Main {
         employee.setFirstName("Jan");
         employee.setLastName("Nowak");
         employee.setSalary(3333.3);
-        employee.setSalary2(new BigDecimal(12345.6));
+        employee.setSalary2(new BigDecimal("12345.6"));
 
         entityManager.getTransaction().begin();
         entityManager.persist(employee);
