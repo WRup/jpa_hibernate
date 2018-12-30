@@ -16,5 +16,15 @@ Nastêpnie tworzymy w resoucres folder META-INF a w nim plik persistence.xml
 
 Kolejn¹ bilbiotek¹ jest biblioteka ³¹cz¹ca siê z baz¹ czyli jdbc danej bazy danych.
 
+Aby utworzyæ po³¹æzenie z baz¹ nale¿y wykorzystaæ EntityManagerFactor objekt, a nastêpnie stworzyæ na jego podstawie objekt EntityManager.
+
+Korzystaj¹c z obiektu entityManager mo¿emy wykonywaæ transakcjê na bazie danych umo¿liwiaj¹ce operacje zapisu. A nastêpnie wykorzystuj¹c funkcjê presist zapisujemy wybrany obiekt w bazie danych.
+ entityManager.getTransaction().begin();
+ entityManager.persist(foo);
+ entityManager.getTransaction().commit();
+
+Pamiêtaæ o tym, aby w klasie na podstawie której chcemy utworzyæ tabele nale¿y dodaæ adnotacjê @Entity.
+
+
 
 
