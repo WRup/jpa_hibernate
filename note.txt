@@ -32,5 +32,6 @@ Przydatne adnotacje:
 	4. @Transient - dodana przy polu pomija go i nie dodaje jako kolumna w tabeli bazy danych.
 
 
-
-
+Data i czas:
+Wszystkie klasy java.sql.* s¹ wraperem na klasê java.util.Date
+U¿ywaj¹c adnotacji @Temporal(TemporalType.DATE/TIME/TIMESTAMP) mo¿emy ustaliæ dany typ kolumny w bazie danuych.
