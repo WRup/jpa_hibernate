@@ -35,3 +35,7 @@ Przydatne adnotacje:
 Data i czas:
 Wszystkie klasy java.sql.* s¹ wraperem na klasê java.util.Date
 U¿ywaj¹c adnotacji @Temporal(TemporalType.DATE/TIME/TIMESTAMP) mo¿emy ustaliæ dany typ kolumny w bazie danuych.
+
+Jedna klasa - dwie tabele:
+Aby utworzyæ dwie tabele na podstawie jednej klasy dopisujemy adnotacjê @SecondTable(name = "nazwa_tabeli", pkJoinColumns = @PrimaryKeyJoinColumn(name = "nazwa_id_dla_primary_table"));
+Nastêpnie do pól, które chcemy aby by³y w drugiej tabeli dodajemy adnotacjê @Table(name = "nazwa_tabeli_z_adnotacji_secondtable");
