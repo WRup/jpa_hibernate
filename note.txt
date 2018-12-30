@@ -8,4 +8,13 @@ Po JDPC powsta³o kilka innych rozwi¹zañ: JDPC Template - wzorzec, który umo¿liwa
 
 JPA - dokument, który opisuje w jaki sposób programista powinien pisaæ programy z wykorzystaniem JPA oraz jak powinna przebiegaæ implementacja (np. Hibernate jest implementacj¹ JPA).
 
+Podstawowa konfiguracja nie wykorzustyj¹ca bootstrapa przebiega nastêpuj¹co:
+	1. Mo¿na pobraæ ca³¹ paczkê jar hibernate-jpa-2.0-api
+	2. Stworzenie projektu maven i dodanie dependencies: entitymenager, validator, search i core(?).
+	3. Dodanie dependencies hibernate-jpa-2.0-api
+Nastêpnie tworzymy w resoucres folder META-INF a w nim plik persistence.xml
+
+Kolejn¹ bilbiotek¹ jest biblioteka ³¹cz¹ca siê z baz¹ czyli jdbc danej bazy danych.
+
+
 
