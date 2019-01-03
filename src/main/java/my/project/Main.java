@@ -1,5 +1,6 @@
 package my.project;
 
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import my.project.domain.Address;
 import my.project.domain.Employee;
 
@@ -28,6 +29,12 @@ public class Main {
         entityManager.persist(employee);
         entityManager.persist(address);
         entityManager.getTransaction().commit();
+
+        System.out.println(employee.toString());
+
+        entityManager.refresh(employee);
+
+        System.out.println(employee.toString());
 
         entityManager.close();
         entityManagerFactory.close();

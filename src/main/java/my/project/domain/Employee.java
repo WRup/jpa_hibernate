@@ -26,6 +26,8 @@ public class Employee {
     private String lastName;
     @Column(name = "pensja")
     private double salary;
+    @Column(name = "podatek")
+    private double tax;
     @OneToOne
     @JoinColumn(name = "addressId")
     private Address address;

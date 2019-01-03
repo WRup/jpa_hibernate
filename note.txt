@@ -51,3 +51,6 @@ Pobieranie i modyfikacja obiektu:
 ¯eby pobraæ obiekt wykorzystujemy metodê "find" z entity managera, która zwraca nam obiekt o typie podanym jako pierwszy parametr metody.
 Mo¿emy nastêpnie zmodyfikowaæ taki obiekt wykorzystuj¹c settery i nie musimy go ponownie zapisywaæ do bazy metod¹ persist, w momencie commitowania tranzakcji obiekt ten
 jest automatycznie aktualizowany.
+
+Triggery:
+Stworzony trigger w PostgreSQL, który po dodaniu pracownika do bazy danych automatycnzie wylicza i ustawia wartoœæ dla poola "tax".
