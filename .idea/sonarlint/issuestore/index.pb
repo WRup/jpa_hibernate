@@ -17,3 +17,5 @@ b
 2src/main/java/my/project/domain/PossibleTypes.java,4\0\4086a0cbfb52c8bdc9ebf6fe93995498f92d9a0e
 ]
 -src/main/java/my/project/domain/DateTime.java,c\5\c556163ec59054b701018052a725c0edaf3597bd
+\
+,src/main/java/my/project/domain/Address.java,5\1\5106b167f94a5dffd9363f8ae242172b71a7c397

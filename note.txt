@@ -46,3 +46,8 @@ zostanie utworzona jedna tabela zmiast dwóch, ³¹cz¹ca pola z obu klas.
 
 One-to-one:
 Relacje jeden do jednego pomiêdzy dwoma klasami/tabelami tworzymy z u¿yciem adnotacji @OneToOne w jednej z klas przy polu, kórym jest obiuekt drugiej klasy.
+
+Pobieranie i modyfikacja obiektu:
+¯eby pobraæ obiekt wykorzystujemy metodê "find" z entity managera, która zwraca nam obiekt o typie podanym jako pierwszy parametr metody.
+Mo¿emy nastêpnie zmodyfikowaæ taki obiekt wykorzystuj¹c settery i nie musimy go ponownie zapisywaæ do bazy metod¹ persist, w momencie commitowania tranzakcji obiekt ten
+jest automatycznie aktualizowany.
