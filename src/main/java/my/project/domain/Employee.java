@@ -8,8 +8,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Data
@@ -20,18 +18,12 @@ public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    @Column(name = "imie", nullable = false, length = 10)
+    @Column(name = "imie", nullable = false, length = 15)
     private String firstName;
-    @Column(name = "naziwsko", columnDefinition = "VARCHAR(10) NOT NULL")
+    @Column(name = "naziwsko", columnDefinition = "VARCHAR(15) NOT NULL")
     private String lastName;
     @Column(name = "pensja")
     private double salary;
-    @Column(name = "podatek")
-    private double tax;
-    @OneToOne
-    @JoinColumn(name = "addressId")
-    private Address address;
-
 
 
 }

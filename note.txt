@@ -57,3 +57,7 @@ Stworzony trigger w PostgreSQL, który po dodaniu pracownika do bazy danych autom
 
 Usuwanie obiektów z DB:
 Wykorzystujemy metodê entity managera - remove(), któa przyjmuje referencje do usuwanego obiektu. Wczeœniej najlepiej znaleŸæ sobie odpowiedni obiekt metod¹ find, a nastêpnie go usun¹æ.
+Pamiêtaæ o tym aby usuwanie obiektu przeprowadziæ w osobnej trasakcji!
+
+JPQL:
+Do wykonania zapytania na bazie danych w tym jêzyku nale¿y skorzystaæ z metody entity managera - query. Aczkolwiek ten sposób nie jest bezpieczny patrz¹c od strony programistycznej.
