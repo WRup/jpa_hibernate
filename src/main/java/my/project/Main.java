@@ -30,11 +30,10 @@ public class Main {
         entityManager.persist(address);
         entityManager.getTransaction().commit();
 
-        System.out.println(employee.toString());
-
-        entityManager.refresh(employee);
-
-        System.out.println(employee.toString());
+        entityManager.getTransaction().begin();
+        entityManager.remove(employee);
+        entityManager.remove(address);
+        entityManager.getTransaction().commit();
 
         entityManager.close();
         entityManagerFactory.close();

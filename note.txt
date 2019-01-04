@@ -54,3 +54,6 @@ jest automatycznie aktualizowany.
 
 Triggery:
 Stworzony trigger w PostgreSQL, który po dodaniu pracownika do bazy danych automatycnzie wylicza i ustawia wartoœæ dla poola "tax".
+
+Usuwanie obiektów z DB:
+Wykorzystujemy metodê entity managera - remove(), któa przyjmuje referencje do usuwanego obiektu. Wczeœniej najlepiej znaleŸæ sobie odpowiedni obiekt metod¹ find, a nastêpnie go usun¹æ.
