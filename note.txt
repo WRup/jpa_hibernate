@@ -61,3 +61,8 @@ Pamiêtaæ o tym aby usuwanie obiektu przeprowadziæ w osobnej trasakcji!
 
 JPQL:
 Do wykonania zapytania na bazie danych w tym jêzyku nale¿y skorzystaæ z metody entity managera - query. Aczkolwiek ten sposób nie jest bezpieczny patrz¹c od strony programistycznej.
+Przekazywanie parametrów zadanych w JPQL wygl¹da nastêpuj¹co, w query w miejscu w którym chcemy zadaæ jak¹œ wartoœæ poprzedzamy nazwê zmiennej dwukropkiem np. "where e.salary > :minSalary".
+Nastêpnie parametr taki inicjalizujemy za pomoc¹ metody setParametr("minSalary", 3000.0);
+Inn¹ metod¹ podstawiania zmienny jest indeksowanie, wygl¹da ona nasepuj¹co: "where e.salary > ?1", a nastêpnie w petodzie setParametr ustawiamy j¹w ten spobób setParametr(1, 2000.0);
+Ostania metoda to przekazanie ca³ej listy zmiennych, które ma spe³niaæ zapytanie: "where e.lastName in :names" - znalezienie wszystkich pracowników ktrórych nazwiska znajduj¹ si w liœcie "names".
+Tworzymy tak¹ listê, a nastêpnie przypisujemy j¹ w metodzie setParametr("names", names);

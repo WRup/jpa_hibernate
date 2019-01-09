@@ -1,7 +1,6 @@
 
-Xsquid:S1191"5Use classes from the Java API instead of Sun classes.(ùùÒÔùÿÿÿÿ8¯àè¬-
-…squid:UselessImportCheck"URemove this unused import 'com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer'.(ùùÒÔùÿÿÿÿ8¯àè¬-
-[
-squid:S106%"9Replace this use of System.out or System.err by a logger.(‘ñÙùıÿÿÿÿ8¯àè¬-
-[
-squid:S106!"9Replace this use of System.out or System.err by a logger.(‘ñÙùıÿÿÿÿ8¯àè¬-
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(âÇË•8íäó×-
+†squid:S1450"cRemove the "entityManagerFactory" field and declare it as a local variable in the relevant methods.(ûî£šûÿÿÿÿ8 ÛáÖ-
+asquid:UselessImportCheck"6Remove this unused import 'my.project.domain.Address'.(ğÎ°Œ8¡İÖ-
+nsquid:CommentedOutCodeLine""<This block of commented-out lines of code should be removed.(ÿÄúæÿÿÿÿÿ8“¶Ë×-

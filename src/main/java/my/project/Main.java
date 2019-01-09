@@ -1,14 +1,12 @@
 package my.project;
 
-import my.project.domain.Address;
 import my.project.domain.Employee;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-import javax.persistence.Query;
 import javax.persistence.TypedQuery;
-import java.util.Iterator;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
@@ -22,27 +20,23 @@ public class Main {
 
         addEmployees();
 
-        Query query = entityManager.createQuery("select concat(e.firstName, ' ', e.lastName), e.salary * 0.20 from Employee e");
-        Iterator<?> iterator = query.getResultList().iterator();
-        while(iterator.hasNext()){
-            Object[] item = (Object[]) iterator.next();
-            String name = (String) item[0];
-            Double tax = (Double) item[1];
-            System.out.println(name + " has to pay " + tax);
-        }
+        TypedQuery<Employee> query = entityManager.createQuery("select e from Employee e where e.lastName in :names", Employee.class);
 
-//        TypedQuery<Employee> query = entityManager.createQuery("select pracownik from Employee pracownik where pracownik.salary > 3000 order by pracownik.salary", Employee.class);
-//        List<Employee> employeeList = query.getResultList();
-//        for ( Employee employee : employeeList){
-//            System.out.println(employee);
-//        }
-        //System.out.println(employee);
+        List<String> names= new ArrayList<String>();
+        names.add("Mateusiak");
+        names.add("Bednarek");
+
+        query.setParameter("names", names);
+
+        for (Employee employee: query.getResultList()){
+            System.out.println(employee);
+        }
 
         entityManager.close();
         entityManagerFactory.close();
     }
 
-    private static void addEmployees(){
+    private static void addEmployees() {
         addEmployee("Karol", "Mateusiak", 2633);
         addEmployee("Marika", "Bednarek", 2345);
         addEmployee("Jan", "Mateusiak", 7346);
@@ -53,10 +47,10 @@ public class Main {
         addEmployee("Przemek", "Maciejewski", 5344);
         addEmployee("Robert", "Woźniak", 3324);
         addEmployee("Agnieeszka", "Nowak", 2000);
-        addEmployee("Angeilika", "Bednarska" , 1000);
+        addEmployee("Angeilika", "Bednarska", 1000);
     }
 
-    private static void addEmployee(String name, String surname, double salary){
+    private static void addEmployee(String name, String surname, double salary) {
         Employee employee = new Employee();
         employee.setFirstName(name);
         employee.setLastName(surname);
