@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d03446c-a556-4d2c-a7e2-ca31a13e7e1c" name="Default" comment="code refactor">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/8/d8db4dfa20f27384c339370f9963fcc7cac26378" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/8/d8db4dfa20f27384c339370f9963fcc7cac26378" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/note.txt" afterPath="$PROJECT_DIR$/note.txt" />
       <change beforePath="$PROJECT_DIR$/src/main/java/my/project/Main.java" afterPath="$PROJECT_DIR$/src/main/java/my/project/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/project/domain/Employee.java" afterPath="$PROJECT_DIR$/src/main/java/my/project/domain/Employee.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -52,11 +49,10 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/my/project/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+            <state relative-caret-position="408">
+              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#805#813#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -428,12 +424,12 @@
       <workItem from="1546634944570" duration="4765000" />
       <workItem from="1546704222491" duration="157000" />
       <workItem from="1547064228144" duration="1589000" />
-      <workItem from="1547068590157" duration="427000" />
+      <workItem from="1547068590157" duration="1178000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27369000" />
+    <option name="totallyTimeSpent" value="28120000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -610,7 +606,6 @@
           <caret line="29" column="39" lean-forward="true" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#805#813#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -692,7 +687,6 @@
           <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#805#813#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -747,7 +741,6 @@
           <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#805#813#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -793,7 +786,6 @@
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#805#813#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1080,11 +1072,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/my/project/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+        <state relative-caret-position="408">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#805#813#0" expanded="true" />
           </folding>
         </state>
       </provider>

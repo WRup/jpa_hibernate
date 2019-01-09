@@ -69,4 +69,7 @@ Tworzymy tak¹ listê, a nastêpnie przypisujemy j¹ w metodzie setParametr("names",
 
 Adtrybut name w @Entity ustawia domyœln¹ nazwê dla tabeli w bazie danych. Co wiêcej ten atrybut wykorzystuje siê w zapytaniach JPQL.
 W przypadku nadawania name w adotacji @Table ma ona wiêkszy priortytet ni¿ name w @Entity. @Table odnoœi sie jedynie do bazy danych,
-natomiast @Entity odnoœi siê do kodu i zapytañ JPQL
+natomiast @Entity odnoœi siê do kodu i zapytañ JPQL.
+W zapytaniach JPQL istotna jest WIELKOŒÆ ZNAKÓW.
+
+Funckje w JPQL dzia³aj¹ tak samo jak w SQL. Przyk³ady takie jak av(), sum(), count() itd...
