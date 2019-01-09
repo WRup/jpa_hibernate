@@ -1,6 +1,5 @@
 
 V
-squid:S106"9Replace this use of System.out or System.err by a logger.(âÇË•8íäó×-
-†squid:S1450"cRemove the "entityManagerFactory" field and declare it as a local variable in the relevant methods.(ûî£šûÿÿÿÿ8 ÛáÖ-
-asquid:UselessImportCheck"6Remove this unused import 'my.project.domain.Address'.(ğÎ°Œ8¡İÖ-
-nsquid:CommentedOutCodeLine""<This block of commented-out lines of code should be removed.(ÿÄúæÿÿÿÿÿ8“¶Ë×-
+squid:S106 "9Replace this use of System.out or System.err by a logger.(¼¡¨ò8®•Ú¢ƒ-
+†squid:S1450"cRemove the "entityManagerFactory" field and declare it as a local variable in the relevant methods.(ûî£šûÿÿÿÿ8 ÛáÖ-
+msquid:S1192"JDefine a constant instead of duplicating this literal "Mateusiak" 3 times.(Ì£Êøşÿÿÿÿ8•èû¢ƒ-

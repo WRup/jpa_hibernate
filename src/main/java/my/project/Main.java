@@ -20,7 +20,7 @@ public class Main {
 
         addEmployees();
 
-        TypedQuery<Employee> query = entityManager.createQuery("select e from Employee e where e.lastName in :names", Employee.class);
+        TypedQuery<Employee> query = entityManager.createQuery("select e from Pracownik e where e.lastName in :names", Employee.class);
 
         List<String> names= new ArrayList<String>();
         names.add("Mateusiak");

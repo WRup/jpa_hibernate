@@ -66,3 +66,7 @@ Nastêpnie parametr taki inicjalizujemy za pomoc¹ metody setParametr("minSalary",
 Inn¹ metod¹ podstawiania zmienny jest indeksowanie, wygl¹da ona nasepuj¹co: "where e.salary > ?1", a nastêpnie w petodzie setParametr ustawiamy j¹w ten spobób setParametr(1, 2000.0);
 Ostania metoda to przekazanie ca³ej listy zmiennych, które ma spe³niaæ zapytanie: "where e.lastName in :names" - znalezienie wszystkich pracowników ktrórych nazwiska znajduj¹ si w liœcie "names".
 Tworzymy tak¹ listê, a nastêpnie przypisujemy j¹ w metodzie setParametr("names", names);
+
+Adtrybut name w @Entity ustawia domyœln¹ nazwê dla tabeli w bazie danych. Co wiêcej ten atrybut wykorzystuje siê w zapytaniach JPQL.
+W przypadku nadawania name w adotacji @Table ma ona wiêkszy priortytet ni¿ name w @Entity. @Table odnoœi sie jedynie do bazy danych,
+natomiast @Entity odnoœi siê do kodu i zapytañ JPQL
