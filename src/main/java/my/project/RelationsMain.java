@@ -27,6 +27,8 @@ public class RelationsMain {
         phone2.setType("home");
         phone1.setNumber("323123123");
         phone2.setNumber("73888499983");
+        phone1.setEmployee(employee);
+        phone2.setEmployee(employee);
         List<Phone> phones = new ArrayList<Phone>();
         phones.add(phone1);
         phones.add(phone2);

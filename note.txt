@@ -84,4 +84,8 @@ RELACJE W JPA:
 Przy relacji dwukierunkowej nale¿y dodaæ w obu encjach pola drugiego obiektu wraz z adnotacj¹ @OneToOne. W tej mniej znacz¹cej, a bardziej w tej, której pola nie chcemy w DB
 dodajemy mapped by = "nazwa pola z drugiej encji.
 Je¿eli nie dalibyœmy mapped by to tak naprawdê stworzylibyœmy dwie jednokierunkowe relacje, które by³yby ze sob¹ tylko pozornie powi¹zane.
-
+@OneToMany:
+Przy relacji jednokierunowej nale¿y stworzyæ dwie encje, a nastêpnie w jednej z nich tworzymy listê obiektów z drugiej encji i dodajemy adnotacjê @OneToMany, mo¿emy równie¿ dodaæ
+adnotacjê @JoinColumn i stworzyæ kolumne o zadanej nazwie w drugim obiekcie bazodanowym.
+Przy relacji dwukieunkowej zasada podobna do dwukierunkowej w @onetoone, nalezy pamiêtaæ o mapped by po stronie encji, w której jest @OneToMany (jeden).
+W tym wypadku @Joincolumn dajemy w encji, której jest wiele (@ManyToOne)

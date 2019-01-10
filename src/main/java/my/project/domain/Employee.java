@@ -7,7 +7,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import java.util.List;
 
@@ -21,8 +20,7 @@ public class Employee {
     private String firstName;
     private String lastName;
     private double salary;
-    @OneToMany
-    @JoinColumn(name = "owner_id")
+    @OneToMany(mappedBy = "employee")
     private List<Phone> phones;
 
 
