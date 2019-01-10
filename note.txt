@@ -71,5 +71,17 @@ Adtrybut name w @Entity ustawia domyœln¹ nazwê dla tabeli w bazie danych. Co wiê
 W przypadku nadawania name w adotacji @Table ma ona wiêkszy priortytet ni¿ name w @Entity. @Table odnoœi sie jedynie do bazy danych,
 natomiast @Entity odnoœi siê do kodu i zapytañ JPQL.
 W zapytaniach JPQL istotna jest WIELKOŒÆ ZNAKÓW.
-
 Funckje w JPQL dzia³aj¹ tak samo jak w SQL. Przyk³ady takie jak av(), sum(), count() itd...
+
+
+
+RELACJE W JPA:
+@OneToOne -> Unidirectional i Bidirectional. Jedno i dwu kieurnkowa.
+@OneToMany -> Unidirectional i Bidirectional. Jedno i dwu kieurnkowa.
+@ManyToMany -> Bidirectional: Dwukierunkowa
+
+@OneToOne:
+Przy relacji dwukierunkowej nale¿y dodaæ w obu encjach pola drugiego obiektu wraz z adnotacj¹ @OneToOne. W tej mniej znacz¹cej, a bardziej w tej, której pola nie chcemy w DB
+dodajemy mapped by = "nazwa pola z drugiej encji.
+Je¿eli nie dalibyœmy mapped by to tak naprawdê stworzylibyœmy dwie jednokierunkowe relacje, które by³yby ze sob¹ tylko pozornie powi¹zane.
+
