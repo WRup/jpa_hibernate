@@ -89,3 +89,19 @@ Przy relacji jednokierunowej nale¿y stworzyæ dwie encje, a nastêpnie w jednej z 
 adnotacjê @JoinColumn i stworzyæ kolumne o zadanej nazwie w drugim obiekcie bazodanowym.
 Przy relacji dwukieunkowej zasada podobna do dwukierunkowej w @onetoone, nalezy pamiêtaæ o mapped by po stronie encji, w której jest @OneToMany (jeden).
 W tym wypadku @Joincolumn dajemy w encji, której jest wiele (@ManyToOne)
+
+!!!WA¯NE!!! - w momencie gdy tworzymy konstruktor sprametryzowany dla encji wa¿nym jest aby stworzyæ równie¿ konstrukotor domyœlny na potrzeby JPA. W innym wypadku zapis i odczyt z bazy nie zadzia³a.
+
+@ManyToMany:
+Relacja ta mo¿e byæ jedynie dwukierunkowa. Tworzymy j¹ dodaj¹c adnotacjê @ManyToMany w ka¿dej z encji przy polu drugiej encji.
+W jednej z nich musimy dodaæ "mapped by"tak jak w powy¿szych przyk³adach.
+JPA automatycznie utworzy w naszej bazie danych dodatkow¹ tabelê przedstawiaj¹c¹ relacjê obu encji.
+Domyœlnie nazwa ta jest to nazwa jednej tabeli + "_" + nazwa drugiej tabeli.
+Mozemy zmieniæ nazwê tabeli ³¹cz¹cej wykorzystjuj¹c adnotacjê @JoinTable w jednej z encji pod adnotacj¹ @ManyToMany.
+Wygl¹da ona nastêpuj¹co
+ @ManyToMany
+    @JoinTable(
+            name = "pracownicy_w_projektach",
+            joinColumns = {@JoinColumn(name = "id_projektu")},
+            inverseJoinColumns = {@JoinColumn(name = "id_pracownika")}
+    )

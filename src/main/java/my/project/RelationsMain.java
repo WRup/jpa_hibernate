@@ -2,6 +2,7 @@ package my.project;
 
 import my.project.domain.Employee;
 import my.project.domain.Phone;
+import my.project.domain.Project;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -16,28 +17,40 @@ public class RelationsMain {
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("myDatabase");
         EntityManager entityManager = entityManagerFactory.createEntityManager();
 
-        Employee employee = new Employee();
-        Phone phone1 = new Phone();
-        Phone phone2 = new Phone();
+        Project project1 = new Project();
+        Project project2 = new Project();
+        Employee employee1 = new Employee();
+        Employee employee2 = new Employee();
 
-        employee.setFirstName("Jan");
-        employee.setLastName("Nowak");
-        employee.setSalary(1234.4);
-        phone1.setType("mobile");
-        phone2.setType("home");
-        phone1.setNumber("323123123");
-        phone2.setNumber("73888499983");
-        phone1.setEmployee(employee);
-        phone2.setEmployee(employee);
-        List<Phone> phones = new ArrayList<Phone>();
-        phones.add(phone1);
-        phones.add(phone2);
-        employee.setPhones(phones);
+        project1.setName("Projekt 1");
+        project2.setName("Projekt 2");
+
+        employee1.setFirstName("Jan");
+        employee1.setLastName("Nowak");
+        employee1.setSalary(1234.4);
+
+        employee2.setFirstName("Maria");
+        employee2.setLastName("Nowak");
+        employee2.setSalary(955.25);
+
+        List<Employee> employees = new ArrayList<Employee>();
+        List<Project> projects = new ArrayList<Project>();
+
+        employees.add(employee1);
+        employees.add(employee2);
+        projects.add(project1);
+        projects.add(project2);
+
+        employee1.setProjects(projects);
+        employee2.setProjects(projects);
+        project1.setEmployees(employees);
+        project2.setEmployees(employees);
 
         entityManager.getTransaction().begin();
-        entityManager.persist(employee);
-        entityManager.persist(phone1);
-        entityManager.persist(phone2);
+        entityManager.persist(employee1);
+        entityManager.persist(employee2);
+        entityManager.persist(project1);
+        entityManager.persist(project2);
         entityManager.getTransaction().commit();
 
 

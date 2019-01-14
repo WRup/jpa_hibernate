@@ -1,13 +1,13 @@
 
-†squid:S1450"cRemove the "entityManagerFactory" field and declare it as a local variable in the relevant methods.(ûî£šûÿÿÿÿ8 ÛáÖ-
-V
-squid:S106"9Replace this use of System.out or System.err by a logger.(Ëì8¢£¤ƒ-
 isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(£ƒà8ÔÏ™¤ƒ-
-V
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÓĞññ8¢£¤ƒ-
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(»Ÿ±ºüÿÿÿÿ8„‡£¤ƒ-
 [
 squid:S106"9Replace this use of System.out or System.err by a logger.(Ã¸…«şÿÿÿÿ8¢£¤ƒ-
 V
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÓĞññ8¢£¤ƒ-
+†squid:S1450"cRemove the "entityManagerFactory" field and declare it as a local variable in the relevant methods.(ûî£šûÿÿÿÿ8 ÛáÖ-
+V
 squid:S106"9Replace this use of System.out or System.err by a logger.(ÂÃ‡8¢£¤ƒ-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(»Ÿ±ºüÿÿÿÿ8„‡£¤ƒ-
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ëì8¢£¤ƒ-
