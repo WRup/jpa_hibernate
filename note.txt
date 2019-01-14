@@ -105,3 +105,28 @@ Wygl¹da ona nastêpuj¹co
             joinColumns = {@JoinColumn(name = "id_projektu")},
             inverseJoinColumns = {@JoinColumn(name = "id_pracownika")}
     )
+
+AUTOGENEROWANE WARTOŒCI:
+@GeneratedValue:
+1. strategy = AUTO - hibernate automtycznie wybiera najodpowiedniejsz¹ z trzech dostêpnych strategii.
+2. strategy = IDENTITY - automatyczne dodawanie kluczy przez bazê danych. 
+3. strategy = SEQUENCE - w bazie danych zostanie stworzona sekwencja.
+4. strategy = TABLE - zostanie stworzona tabela w bazie danych (domyœlnie hibernate_sequences), która jest odpowiedzialna
+za przydzielanie kolejnych identyfikatorów podczas dodawania nowych pracowników.
+Hibernate rezerwuje sobie pulê idków i w momencie gdy wie ¿e bêdzie przydziela³ identyfikatory (w momencie tworzenia obiektu)
+to nie zwiêksza za ka¿dym razem wartoœæ w tabeli hibernate_sequence tylko zwiêksza id obiektu o liczbê zarezerwowanych idków
+a liczbê w tabeli hibernate_sequence o 1. Chodzi o wydajnoœæ, hibernate nie musi za ka¿dym razem gdy dodaje obiekt odwo³ywaæ siê
+do tabeli hibernate_sequence - ma ju¿ zarezerwowane idki.
+Mo¿emy konfigurowaæ domyœln¹ tabelê hibernate_sequence i jej warotœci w nastêpuj¹cy sposób:
+
+@TableGenerator(name = "mojGenerator",
+        table = "tabela_z_identyfikatorami",
+            pkColumnName = "nazwa_sekwencji",
+            valueColumnName = "wartosc_identyfikatora",
+            pkColumnValue = "id_pracownika",
+            initialValue = 10,
+            allocationSize = 15
+    )
+
+dodatkowo musimy w @GeneratedValue wskazaæ na generator, który skonfigurowaliœy w powy¿szej adnotacji:
+@GeneratedValue(strategy = GenerationType.TABLE, generator = "mojGenerator")

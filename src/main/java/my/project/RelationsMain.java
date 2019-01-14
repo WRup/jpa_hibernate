@@ -41,8 +41,6 @@ public class RelationsMain {
         projects.add(project1);
         projects.add(project2);
 
-        employee1.setProjects(projects);
-        employee2.setProjects(projects);
         project1.setEmployees(employees);
         project2.setEmployees(employees);
 

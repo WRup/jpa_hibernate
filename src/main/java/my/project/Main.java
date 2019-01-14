@@ -16,20 +16,26 @@ public class Main {
         entityManagerFactory = Persistence.createEntityManagerFactory("myDatabase");
         entityManager = entityManagerFactory.createEntityManager();
 
-        addEmployees();
+        Employee employee1 = new Employee();
+        employee1.setFirstName("Jan");
+        employee1.setLastName("Nowak");
+        employee1.setSalary(3333.3);
 
+        Employee employee2 = new Employee();
+        employee2.setFirstName("Robert");
+        employee2.setLastName("Bednarek");
+        employee2.setSalary(4444.4);
 
-        Query query = entityManager.createQuery("select substring(e.firstName, 1, 3), trim(e.lastName), lower(e.firstName), upper(e.firstName), length(e.firstName) from Pracownik e where e.firstName='Karol'");
+        Employee employee3 = new Employee();
+        employee3.setFirstName("Damian");
+        employee3.setLastName("Stach");
+        employee3.setSalary(5555.4);
 
-//        Query query = entityManager.createQuery("select avg(e.salary), min(e.salary), max(e.salary), sum(e.salary), count(e) from Pracownik e");
-//
-        Object [] result = (Object[]) query.getSingleResult();
-        System.out.println("Pierwsze litery imienia: " + result[0]);
-        System.out.println("Naziwsko: |" + result[1] + "|");
-        System.out.println("Imie malymi literami: " + result[2]);
-        System.out.println("Imie wielkimi literami: " + result[3]);
-        System.out.println("Dlugosc imienia: " + result[4]);
-
+        entityManager.getTransaction().begin();
+        entityManager.persist(employee1);
+        entityManager.persist(employee2);
+        entityManager.persist(employee3);
+        entityManager.getTransaction().commit();
 
         entityManager.close();
         entityManagerFactory.close();
