@@ -1,8 +1,7 @@
 package my.project;
 
-import my.project.domain.Employee;
-import my.project.domain.Phone;
-import my.project.domain.Project;
+import my.project.domain.basic.Employee;
+import my.project.domain.basic.Project;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

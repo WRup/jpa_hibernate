@@ -130,3 +130,9 @@ Mo¿emy konfigurowaæ domyœln¹ tabelê hibernate_sequence i jej warotœci w nastêpuj
 
 dodatkowo musimy w @GeneratedValue wskazaæ na generator, który skonfigurowaliœy w powy¿szej adnotacji:
 @GeneratedValue(strategy = GenerationType.TABLE, generator = "mojGenerator")
+
+DZIEDZICZENIE W JPA:
+Do dziedziczenia wykorzystujemy nastêpuj¹ce adnotacje:
+@@Inheritance(strategy = InheritanceType.SINGLE_TABLE) oraz dodatkowo zmiana nazw kolumny DTYPE oraz jej wartoœci za pomoc¹
+adnotacji @DiscriminatorColumn w klasie po której dziedzicz¹ oraz @DiscriminatorValue w klasach dziedzicz¹cych.
+1. Single Table (domyœlny) - wystarczy zwyk³y extend klasy. Aczkolwiek

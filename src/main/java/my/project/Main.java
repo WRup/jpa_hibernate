@@ -1,11 +1,12 @@
 package my.project;
 
-import my.project.domain.Employee;
+import my.project.domain.basic.Employee;
+import my.project.domain.inheritance.Professor;
+import my.project.domain.inheritance.Student;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-import javax.persistence.Query;
 
 public class Main {
 
@@ -16,25 +17,19 @@ public class Main {
         entityManagerFactory = Persistence.createEntityManagerFactory("myDatabase");
         entityManager = entityManagerFactory.createEntityManager();
 
-        Employee employee1 = new Employee();
-        employee1.setFirstName("Jan");
-        employee1.setLastName("Nowak");
-        employee1.setSalary(3333.3);
+        Professor professor = new Professor();
+        professor.setFirstName("Jan");
+        professor.setLastName("Nowak");
+        professor.setSalary(7563.0);
 
-        Employee employee2 = new Employee();
-        employee2.setFirstName("Robert");
-        employee2.setLastName("Bednarek");
-        employee2.setSalary(4444.4);
-
-        Employee employee3 = new Employee();
-        employee3.setFirstName("Damian");
-        employee3.setLastName("Stach");
-        employee3.setSalary(5555.4);
+        Student student = new Student();
+        student.setFirstName("Marek");
+        student.setLastName("Kowalski");
+        student.setAverageGrade(4.75);
 
         entityManager.getTransaction().begin();
-        entityManager.persist(employee1);
-        entityManager.persist(employee2);
-        entityManager.persist(employee3);
+        entityManager.persist(student);
+        entityManager.persist(professor);
         entityManager.getTransaction().commit();
 
         entityManager.close();

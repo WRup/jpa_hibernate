@@ -27,3 +27,5 @@ Z
 *src/main/java/my/project/domain/Phone.java,b\5\b527bcb58749bf611eb828ac4b0563d64358eda8
 [
 +src/main/java/my/project/RelationsMain.java,b\3\b333f416073b5bc48b8f059a74ee955e338aba26
+\
+,src/main/java/my/project/domain/Project.java,2\e\2e8f0a0e5625ef569bcdf026ebfaaab4e298ea1f

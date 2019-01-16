@@ -1,13 +1,4 @@
 
-isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(£ƒà8ÔÏ™¤ƒ-
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(Ã¸…«þÿÿÿÿ8¢£¤ƒ-
-V
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÓÐññ8¢£¤ƒ-
+bsquid:UnusedPrivateMethod,"1Remove this unused private "addEmployees" method.(ÿåîÔþÿÿÿÿ8Ë‘¯ð„-
 †squid:S1450"cRemove the "entityManagerFactory" field and declare it as a local variable in the relevant methods.(ûî£šûÿÿÿÿ8 ÛáÖ-
-V
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÂÃ‡8¢£¤ƒ-
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(»Ÿ±ºüÿÿÿÿ8„‡£¤ƒ-
-V
-squid:S106"9Replace this use of System.out or System.err by a logger.(Ëì8¢£¤ƒ-
+_squid:UselessImportCheck"4Remove this unused import 'javax.persistence.Query'.(¢ðö8Ë‘¯ð„-
