@@ -135,6 +135,7 @@ DZIEDZICZENIE W JPA:
 Do dziedziczenia wykorzystujemy nastêpuj¹ce adnotacje:
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE) oraz dodatkowo zmiana nazw kolumny DTYPE oraz jej wartoœci za pomoc¹
 adnotacji @DiscriminatorColumn w klasie po której dziedzicz¹ oraz @DiscriminatorValue w klasach dziedzicz¹cych.
+
 1. Single Table (domyœlny) - wystarczy zwyk³y extend klasy. Powstaje w db jedna tabela posiadaj¹ca wszystkie kolumny, z klasy 
 po której siê dziedziczy oraz klas dziedzicz¹cych + pole DTYPE, które definiuje do którego obiektu, który dziedziczy
 odnosi siê dany wiersz.
@@ -142,4 +143,11 @@ odnosi siê dany wiersz.
 2. Joined - poswstaje tabla nadrzêdna, w którym jest id + tylko atrybuty tylko z klasy g³ównej. W klasach (tabelach) dziedizcz¹cych
 s¹ jedynie pola tych klas + idki wi¹¿¹ce te tabele z tabel¹ nadrzêdn¹. Identyfikatory z tabeli nadrzêdnej odpowiadj¹ takim samym
 identyfikatorom obiektów w tabelach podrzêdnych.
-U¿ywamy tutaj identyfikatora : @Inheritance(strategy = InheritanceType.JOINED)
+U¿ywamy tutaj adnotacjê: @Inheritance(strategy = InheritanceType.JOINED)
+
+3. Table Per Class - Tutaj dla ka¿dej encji dziedzicz¹cej po encji nadrzêdnej powstaje osobna tablea w bazie danych.
+Tabela taka posiada pola z klasy po której dziedziczy + w³asne pola. Oprócz tego powstaje tabela odpowiedzialna za nadawanie
+identyfikatorów dla tych tabel. Potrzebna poniewa¿ definiuje po³¹czenie miêdzy tymi tabelami, wiêc ka¿dy obiekt musi mieæ inny id,
+skoro dziedzicz¹ po tej samej encji. (Teraz ju¿ chyba hibernate sam wybiera, ale...) Wa¿nym jest ¿eby idki nie by³y generowane
+ze strategi¹ AUTO, a ze strategi¹ TABLE. Sekwencja idków miêdzy tymi tabelami jest wspó³dzielona.
+Tutaj u¿ywamy adnotacjê:  @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
