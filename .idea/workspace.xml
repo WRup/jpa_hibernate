@@ -2,25 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d03446c-a556-4d2c-a7e2-ca31a13e7e1c" name="Default" comment="code refactor">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/my/project/domain/inheritance/Person.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/my/project/domain/inheritance/Professor.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/my/project/domain/inheritance/Student.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/3/b333f416073b5bc48b8f059a74ee955e338aba26" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/3/b333f416073b5bc48b8f059a74ee955e338aba26" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/8/d8db4dfa20f27384c339370f9963fcc7cac26378" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/8/d8db4dfa20f27384c339370f9963fcc7cac26378" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/project/Main.java" afterPath="$PROJECT_DIR$/src/main/java/my/project/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/project/RelationsMain.java" afterPath="$PROJECT_DIR$/src/main/java/my/project/RelationsMain.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/project/domain/Address.java" afterPath="$PROJECT_DIR$/src/main/java/my/project/domain/basic/Address.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/project/domain/Cat.java" afterPath="$PROJECT_DIR$/src/main/java/my/project/domain/basic/Cat.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/project/domain/DateTime.java" afterPath="$PROJECT_DIR$/src/main/java/my/project/domain/basic/DateTime.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/project/domain/Employee.java" afterPath="$PROJECT_DIR$/src/main/java/my/project/domain/basic/Employee.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/project/domain/MyEnum.java" afterPath="$PROJECT_DIR$/src/main/java/my/project/domain/basic/MyEnum.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/project/domain/Owner.java" afterPath="$PROJECT_DIR$/src/main/java/my/project/domain/basic/Owner.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/project/domain/Phone.java" afterPath="$PROJECT_DIR$/src/main/java/my/project/domain/basic/Phone.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/project/domain/PossibleTypes.java" afterPath="$PROJECT_DIR$/src/main/java/my/project/domain/basic/PossibleTypes.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/project/domain/Project.java" afterPath="$PROJECT_DIR$/src/main/java/my/project/domain/basic/Project.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+      <change beforePath="$PROJECT_DIR$/note.txt" afterPath="$PROJECT_DIR$/note.txt" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/project/domain/inheritance/Person.java" afterPath="$PROJECT_DIR$/src/main/java/my/project/domain/inheritance/Person.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/project/domain/inheritance/Professor.java" afterPath="$PROJECT_DIR$/src/main/java/my/project/domain/inheritance/Professor.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/project/domain/inheritance/Student.java" afterPath="$PROJECT_DIR$/src/main/java/my/project/domain/inheritance/Student.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -56,8 +41,8 @@
       <file leaf-file-name="Person.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/my/project/domain/inheritance/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="15" column="47" lean-forward="true" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,8 +53,8 @@
       <file leaf-file-name="Professor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/my/project/domain/inheritance/Professor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="41" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+            <state relative-caret-position="170">
+              <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,8 +65,8 @@
       <file leaf-file-name="Student.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/my/project/domain/inheritance/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+            <state relative-caret-position="170">
+              <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -137,9 +122,9 @@
         <option value="$PROJECT_DIR$/src/main/java/my/project/domain/basic/Project.java" />
         <option value="$PROJECT_DIR$/src/main/java/my/project/Main.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/my/project/domain/inheritance/Person.java" />
-        <option value="$PROJECT_DIR$/src/main/java/my/project/domain/inheritance/Professor.java" />
         <option value="$PROJECT_DIR$/src/main/java/my/project/domain/inheritance/Student.java" />
+        <option value="$PROJECT_DIR$/src/main/java/my/project/domain/inheritance/Professor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/my/project/domain/inheritance/Person.java" />
       </list>
     </option>
   </component>
@@ -456,12 +441,12 @@
       <workItem from="1547300302426" duration="39000" />
       <workItem from="1547495799093" duration="3280000" />
       <workItem from="1547563002695" duration="168000" />
-      <workItem from="1547661488478" duration="2124000" />
+      <workItem from="1547661488478" duration="3853000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38504000" />
+    <option name="totallyTimeSpent" value="40233000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -913,26 +898,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/project/domain/inheritance/Professor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="41" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/project/domain/inheritance/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/my/project/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
@@ -941,10 +906,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/project/domain/inheritance/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/project/domain/inheritance/Professor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/my/project/domain/inheritance/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="15" column="47" lean-forward="true" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

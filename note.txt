@@ -133,6 +133,13 @@ dodatkowo musimy w @GeneratedValue wskazaæ na generator, który skonfigurowaliœy 
 
 DZIEDZICZENIE W JPA:
 Do dziedziczenia wykorzystujemy nastêpuj¹ce adnotacje:
-@@Inheritance(strategy = InheritanceType.SINGLE_TABLE) oraz dodatkowo zmiana nazw kolumny DTYPE oraz jej wartoœci za pomoc¹
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE) oraz dodatkowo zmiana nazw kolumny DTYPE oraz jej wartoœci za pomoc¹
 adnotacji @DiscriminatorColumn w klasie po której dziedzicz¹ oraz @DiscriminatorValue w klasach dziedzicz¹cych.
-1. Single Table (domyœlny) - wystarczy zwyk³y extend klasy. Aczkolwiek
+1. Single Table (domyœlny) - wystarczy zwyk³y extend klasy. Powstaje w db jedna tabela posiadaj¹ca wszystkie kolumny, z klasy 
+po której siê dziedziczy oraz klas dziedzicz¹cych + pole DTYPE, które definiuje do którego obiektu, który dziedziczy
+odnosi siê dany wiersz.
+
+2. Joined - poswstaje tabla nadrzêdna, w którym jest id + tylko atrybuty tylko z klasy g³ównej. W klasach (tabelach) dziedizcz¹cych
+s¹ jedynie pola tych klas + idki wi¹¿¹ce te tabele z tabel¹ nadrzêdn¹. Identyfikatory z tabeli nadrzêdnej odpowiadj¹ takim samym
+identyfikatorom obiektów w tabelach podrzêdnych.
+U¿ywamy tutaj identyfikatora : @Inheritance(strategy = InheritanceType.JOINED)
