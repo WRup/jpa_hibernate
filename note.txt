@@ -151,3 +151,17 @@ identyfikatorów dla tych tabel. Potrzebna poniewa¿ definiuje po³¹czenie miêdzy t
 skoro dziedzicz¹ po tej samej encji. (Teraz ju¿ chyba hibernate sam wybiera, ale...) Wa¿nym jest ¿eby idki nie by³y generowane
 ze strategi¹ AUTO, a ze strategi¹ TABLE. Sekwencja idków miêdzy tymi tabelami jest wspó³dzielona.
 Tutaj u¿ywamy adnotacjê:  @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+
+CRITERIA API:
+Dodana metoda do JPA, która pozwala pobieraæ dane z bazy danych. Ró¿ni siê to od JPQL tym, ¿e nie tworzymy stringów podobnych do jêzyka SQL tylko
+zapytania tworzymy w czysto programistyczny sposób.
+Za poomc¹ EntityManagera tworzymy obiekt CriteriaBuilder, który ma nastêpuj¹ce metody:
+	createQuery - zwraca znany obiekt lub niewiadomo co zwróci
+	createTuple - zwraca kilka obiektów (np. imie (string) i pensje (double))
+	createCriteriaDelete - usuwanie dany z bazy
+	createCriteriaUpdate - aktualizacja danych w bazie
+
+Nastêpnie musimy z u¿yciem criteriaQuery wywo³aæ metodê "from" ¿eby zaznaczyæ sk¹d wybierane dane.
+Nasepnie wywo³anie metody "select" gdzie okreœlamy co bêdizem ywybieraæ
+Ostatnia klauzula to "where" gdzie z u¿yciem buildera tworzymy listê wyra¿eñ, które musz¹ byæ spe³nione.
+Nastepnie w entityManagerze wywo³ujemy createQuery gdize jako parametr podajemy nasze criteriaQuery.

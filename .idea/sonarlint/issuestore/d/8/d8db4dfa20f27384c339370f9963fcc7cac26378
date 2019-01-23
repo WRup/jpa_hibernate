@@ -1,4 +1,3 @@
 
-bsquid:UnusedPrivateMethod,"1Remove this unused private "addEmployees" method.(ÿåîÔşÿÿÿÿ8Ë‘¯ğ„-
-†squid:S1450"cRemove the "entityManagerFactory" field and declare it as a local variable in the relevant methods.(ûî£šûÿÿÿÿ8 ÛáÖ-
-_squid:UselessImportCheck"4Remove this unused import 'javax.persistence.Query'.(¢ğö8Ë‘¯ğ„-
+†squid:S1450"cRemove the "entityManagerFactory" field and declare it as a local variable in the relevant methods.(ûî£šûÿÿÿÿ8 ÛáÖ-
+bsquid:UnusedPrivateMethod'"1Remove this unused private "addEmployees" method.(ÿåîÔşÿÿÿÿ8Ë‘¯ğ„-

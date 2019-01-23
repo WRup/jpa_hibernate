@@ -4,9 +4,16 @@ import my.project.domain.basic.Employee;
 import my.project.domain.inheritance.Professor;
 import my.project.domain.inheritance.Student;
 
+import javax.persistence.Embedded;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.TypedQuery;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Path;
+import javax.persistence.criteria.Root;
+import java.util.List;
 
 public class Main {
 
@@ -17,20 +24,24 @@ public class Main {
         entityManagerFactory = Persistence.createEntityManagerFactory("myDatabase");
         entityManager = entityManagerFactory.createEntityManager();
 
-        Professor professor = new Professor();
-        professor.setFirstName("Jan");
-        professor.setLastName("Nowak");
-        professor.setSalary(7563.0);
+        addEmployees();
 
-        Student student = new Student();
-        student.setFirstName("Marek");
-        student.setLastName("Kowalski");
-        student.setAverageGrade(4.75);
+        // select e from Emplyee e where e.salary > 3000 and e.salary < 5000
 
-        entityManager.getTransaction().begin();
-        entityManager.persist(student);
-        entityManager.persist(professor);
-        entityManager.getTransaction().commit();
+        CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder();
+        CriteriaQuery<Employee> employeeCriteriaQuery = criteriaBuilder.createQuery(Employee.class);
+        Root<Employee> employeeRoot = employeeCriteriaQuery.from(Employee.class);
+
+        Path<Double> salary = employeeRoot.get("salary");
+
+        employeeCriteriaQuery.select(employeeRoot).where(criteriaBuilder.and(criteriaBuilder.greaterThan(salary, 3000.0), criteriaBuilder.lessThan(salary, 5000.0)));
+
+        TypedQuery<Employee> query = entityManager.createQuery(employeeCriteriaQuery);
+        List<Employee> employeeList = query.getResultList();
+
+        for(Employee emp : employeeList){
+            System.out.println(emp);
+        }
 
         entityManager.close();
         entityManagerFactory.close();
